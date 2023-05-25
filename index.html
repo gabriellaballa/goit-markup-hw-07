@@ -31,18 +31,18 @@
     <title>WebStudio</title>
   </head>
   <body>
-    <header class="header-flexbox container">
-      <nav class="nav-flexbox">
-        <ul class="control">
+    <header class="menu container">
+      <nav class="navigation">
+        <ul class="navigation__control">
           <li>
-            <a class="logo" href="/index.html"
-              ><span class="blue-logo">Web</span
-              ><span class="black-logo">Studio</span></a
+            <a class="navigation__logo" href="/index.html"
+              ><span class="navigation__logo--blue">Web</span
+              ><span class="navigation__logo--black">Studio</span></a
             >
           </li>
           <li>
             <a
-              class="current-sign"
+              class="navigation__page"
               href="/index.html"
               target="_blank"
               rel="nofollow noopener noreferrer"
@@ -51,7 +51,7 @@
           </li>
           <li>
             <a
-              class="current-sign"
+              class="navigation__page"
               href="portfolio.html"
               target="_blank"
               rel="nofollow noopener noreferrer"
@@ -60,7 +60,7 @@
           </li>
           <li>
             <a
-              class="current-sign"
+              class="navigation__page"
               href="/contacts.html"
               target="_blank"
               rel="nofollow noopener noreferrer"
@@ -71,17 +71,23 @@
       </nav>
 
       <div class="contacts">
-        <ul class="index-info">
-          <li class="envelope">
-            <a class="mail icon-envelope" href="mailto:info@devstudio.com">
+        <ul class="contacts__info">
+          <li>
+            <a
+              class="contacts__text-sizing contacts__mail"
+              href="mailto:info@devstudio.com"
+            >
               <svg>
                 <use href="images/icons.svg#icon-envelope"></use>
               </svg>
               info@devstudio.com
             </a>
           </li>
-          <li class="smartphone">
-            <a class="tel icon-smartphone" href="tel:+1212-772-4150">
+          <li>
+            <a
+              class="contacts__text-sizing contacts__phone"
+              href="tel:+1212-772-4150"
+            >
               <svg>
                 <use href="images/icons.svg#icon-smartphone"></use>
               </svg>
@@ -92,13 +98,13 @@
       </div>
     </header>
     <main>
-      <div class="title-container">
-        <div class="index-no-margin container">
-          <h1 class="title-index">EFFECTIVE SOLUTIONS FOR</h1>
-          <h1 class="title-index">YOUR BUSINESS</h1>
+      <div class="hero">
+        <div class="hero--no-margin container">
+          <h1 class="hero__title">EFFECTIVE SOLUTIONS FOR</h1>
+          <h1 class="hero__title">YOUR BUSINESS</h1>
         </div>
-        <div class="index-button">
-          <button data-modal-open class="button-request" type="button">
+        <div class="hero__button">
+          <button data-modal-open class="hero__button-request" type="button">
             Request our service
           </button>
         </div>
@@ -107,7 +113,7 @@
         <div class="container">
           <div class="whatwedo">
             <div>
-              <div class="icon-group1">
+              <div class="whatwedo__icon1">
                 <svg>
                   <use href="/images/icons.svg#icon-group1"></use>
                 </svg>
@@ -120,7 +126,7 @@
               </dd>
             </div>
             <div>
-              <div class="icon-group2">
+              <div class="whatwedo__icon2">
                 <svg>
                   <use href="/images/icons.svg#icon-group2"></use>
                 </svg>
@@ -133,7 +139,7 @@
               </dd>
             </div>
             <div>
-              <div class="icon-group3">
+              <div class="whatwedo__icon3">
                 <svg>
                   <use href="/images/icons.svg#icon-group3"></use>
                 </svg>
@@ -146,7 +152,7 @@
               </dd>
             </div>
             <div>
-              <div class="icon-group4">
+              <div class="whatwedo__icon4">
                 <svg>
                   <use href="/images/icons.svg#icon-group4"></use>
                 </svg>
@@ -161,52 +167,52 @@
           </div>
         </div>
       </article>
-      <section class="index-whatwedo">
-        <div class="whatwedo-section">
+      <section class="projects">
+        <div class="projects-section">
           <h2>What we do</h2>
-          <ul class="whatwedo-container container">
+          <ul class="projects__container container">
             <li>
-              <div class="image">
+              <div class="projects__img">
                 <img
                   src="images/1picture.jpg"
                   alt="Firts Picture-We go into all the details"
                   width="370"
                   height="298"
                 />
-                <div class="content">DESKTOP APPS</div>
+                <div class="projects__content">DESKTOP APPS</div>
               </div>
             </li>
             <li>
-              <div class="image">
+              <div class="projects__img">
                 <img
                   src="images/2picture.jpg"
                   alt="Second Picture-Punctuality"
                   width="370"
                   height="298"
                 />
-                <div class="content">MOBILE APPS</div>
+                <div class="projects__content">MOBILE APPS</div>
               </div>
             </li>
             <li>
-              <div class="image">
+              <div class="projects__img">
                 <img
                   src="images/3picture.jpg"
                   alt="Third picture-We use innovative tools"
                   width="370"
                   height="298"
                 />
-                <div class="content">DESIGN SOLUTIONS</div>
+                <div class="projects__content">DESIGN SOLUTIONS</div>
               </div>
             </li>
           </ul>
         </div>
       </section>
 
-      <div class="index-ourteam">
-        <div class="ourteam-section">
+      <div class="team">
+        <div class="team-section">
           <h2>Our team</h2>
-          <div class="ourteam_pictures container">
-            <div class="box-shadow">
+          <div class="team-section__pictures container">
+            <div class="team-section--shadow">
               <img
                 src="images/walker.jpg"
                 alt="Christopher Walker"
@@ -214,14 +220,14 @@
                 height="260"
               />
 
-              <div class="img-description">
-                <b class="ourteam-name">Christopher Walker</b>
-                <h6 class="index-job">Product Designer</h6>
+              <div class="team-section__description">
+                <b class="team-section__name">Christopher Walker</b>
+                <h6 class="team-section__job">Product Designer</h6>
               </div>
-              <div class="icons-list">
+              <div class="team-section__icons">
                 <a
                   href="https://instagram.com"
-                  class="icon round-shape"
+                  class="team-section__platform"
                   aria-label="Instagram"
                 >
                   <svg>
@@ -230,7 +236,7 @@
                 </a>
                 <a
                   href="https://twitter.com"
-                  class="icon round-shape"
+                  class="team-section__platform"
                   aria-label="Twitter"
                 >
                   <svg>
@@ -239,7 +245,7 @@
                 </a>
                 <a
                   href="https://facebook.com"
-                  class="icon round-shape"
+                  class="team-section__platform"
                   aria-label="Facebook"
                 >
                   <svg>
@@ -248,7 +254,7 @@
                 </a>
                 <a
                   href="https://linkedin.com"
-                  class="icon round-shape"
+                  class="team-section__platform"
                   aria-label="LinkedIn"
                 >
                   <svg>
@@ -257,21 +263,21 @@
                 </a>
               </div>
             </div>
-            <div class="box-shadow">
+            <div class="team-section--shadow">
               <img
                 src="images/evans.jpg"
                 alt="Kylie Evans"
                 width="270"
                 height="260"
               />
-              <div class="img-description">
-                <b class="ourteam-name">Kylie Evans</b>
-                <h6 class="index-job">Frontend Developer</h6>
+              <div class="team-section__description">
+                <b class="team-section__name">Kylie Evans</b>
+                <h6 class="team-section__job">Frontend Developer</h6>
               </div>
-              <div class="icons-list">
+              <div class="team-section__icons">
                 <a
                   href="https://instagram.com"
-                  class="icon round-shape"
+                  class="team-section__platform"
                   aria-label="Instagram"
                 >
                   <svg>
@@ -280,7 +286,7 @@
                 </a>
                 <a
                   href="https://twitter.com"
-                  class="icon round-shape"
+                  class="team-section__platform"
                   aria-label="Twitter"
                 >
                   <svg>
@@ -289,7 +295,7 @@
                 </a>
                 <a
                   href="https://facebook.com"
-                  class="icon round-shape"
+                  class="team-section__platform"
                   aria-label="Facebook"
                 >
                   <svg>
@@ -298,7 +304,7 @@
                 </a>
                 <a
                   href="https://linkedin.com"
-                  class="icon round-shape"
+                  class="team-section__platform"
                   aria-label="LinkedIn"
                 >
                   <svg>
@@ -307,21 +313,21 @@
                 </a>
               </div>
             </div>
-            <div class="box-shadow">
+            <div class="team-section--shadow">
               <img
                 src="images/harris.jpg"
                 alt="Ryan Harris"
                 width="270"
                 height="260"
               />
-              <div class="img-description">
-                <b class="ourteam-name">Ryan Harris</b>
-                <h6 class="index-job">Marketing</h6>
+              <div class="team-section__description">
+                <b class="team-section__name">Ryan Harris</b>
+                <h6 class="team-section__job">Marketing</h6>
               </div>
-              <div class="icons-list">
+              <div class="team-section__icons">
                 <a
                   href="https://instagram.com"
-                  class="icon round-shape"
+                  class="team-section__platform"
                   aria-label="Instagram"
                 >
                   <svg>
@@ -330,7 +336,7 @@
                 </a>
                 <a
                   href="https://twitter.com"
-                  class="icon round-shape"
+                  class="team-section__platform"
                   aria-label="Twitter"
                 >
                   <svg>
@@ -339,7 +345,7 @@
                 </a>
                 <a
                   href="https://facebook.com"
-                  class="icon round-shape"
+                  class="team-section__platform"
                   aria-label="Facebook"
                 >
                   <svg>
@@ -348,7 +354,7 @@
                 </a>
                 <a
                   href="https://linkedin.com"
-                  class="icon round-shape"
+                  class="team-section__platform"
                   aria-label="LinkedIn"
                 >
                   <svg>
@@ -357,21 +363,21 @@
                 </a>
               </div>
             </div>
-            <div class="box-shadow">
+            <div class="team-section--shadow">
               <img
                 src="images/moore.jpg"
                 alt="Tyler Moore"
                 width="270"
                 height="260"
               />
-              <div class="img-description">
-                <b class="ourteam-name">Tyler Moore</b>
-                <h6 class="index-job">UI Designer</h6>
+              <div class="team-section__description">
+                <b class="team-section__name">Tyler Moore</b>
+                <h6 class="team-section__job">UI Designer</h6>
               </div>
-              <div class="icons-list">
+              <div class="team-section__icons">
                 <a
                   href="https://instagram.com"
-                  class="icon round-shape"
+                  class="team-section__platform"
                   aria-label="Instagram"
                 >
                   <svg>
@@ -380,7 +386,7 @@
                 </a>
                 <a
                   href="https://twitter.com"
-                  class="icon round-shape"
+                  class="team-section__platform"
                   aria-label="Twitter"
                 >
                   <svg>
@@ -389,7 +395,7 @@
                 </a>
                 <a
                   href="https://facebook.com"
-                  class="icon round-shape"
+                  class="team-section__platform"
                   aria-label="Facebook"
                 >
                   <svg>
@@ -398,7 +404,7 @@
                 </a>
                 <a
                   href="https://linkedin.com"
-                  class="icon round-shape"
+                  class="team-section__platform"
                   aria-label="LinkedIn"
                 >
                   <svg>
@@ -411,36 +417,36 @@
         </div>
       </div>
       <section>
-        <div class="costumers-container">
+        <div class="costumers">
           <h2>Regular Costumers</h2>
-          <div class="logos">
-            <div class="border-dim">
+          <div class="costumers__logos">
+            <div class="costumers__logo-styles">
               <svg>
                 <use href="./images/icons.svg#icon-Logo-1"></use>
               </svg>
             </div>
-            <div class="border-dim">
+            <div class="costumers__logo-styles">
               <svg>
                 <use href="./images/icons.svg#icon-Logo"></use>
               </svg>
             </div>
-            <div class="border-dim">
+            <div class="costumers__logo-styles">
               <svg>
                 <use href="./images/icons.svg#icon-Logo-2"></use>
               </svg>
             </div>
 
-            <div class="border-dim">
+            <div class="costumers__logo-styles">
               <svg>
                 <use href="./images/icons.svg#icon-Logo-3"></use>
               </svg>
             </div>
-            <div class="border-dim">
+            <div class="costumers__logo-styles">
               <svg>
                 <use href="./images/icons.svg#icon-Logo-4"></use>
               </svg>
             </div>
-            <div class="border-dim">
+            <div class="costumers__logo-styles">
               <svg>
                 <use href="./images/icons.svg#icon-Logo-5"></use>
               </svg>
@@ -450,24 +456,26 @@
       </section>
     </main>
     <footer class="footer">
-      <section class="container footer-container">
-        <div class="info-footer">
-          <div class="index-dim">
-            <a class="logo-bottom" href="/index.html"
-              ><span class="blue-logo">Web</span
-              ><span class="white-logo">Studio</span></a
+      <section class="container details">
+        <div class="details__aboutme">
+          <div class="details__dim">
+            <a class="details__logo" href="/index.html"
+              ><span class="navigation__logo--blue">Web</span
+              ><span class="navigation__logo--white">Studio</span></a
             >
 
             <div>
-              <address class="address">695 Park Ave, NY 10065, USA</address>
-              <div class="info-bottom">
+              <address class="details__address">
+                695 Park Ave, NY 10065, USA
+              </address>
+              <div class="details__tel-email">
                 <a
-                  class="mail-bottom"
+                  class="details__email"
                   href="mailto:info@devstudio.com"
                   target="_blank"
                   >info@devstudio.com</a
                 >
-                <a class="tel-bottom" href="tel:+1212-772-4150"
+                <a class="details__tel" href="tel:+1212-772-4150"
                   >+1212-772-4150</a
                 >
               </div>
@@ -476,10 +484,10 @@
         </div>
         <div class="contact-us">
           <h3>FIND US ON</h3>
-          <div class="icons-list-footer">
+          <div class="contact-us__platforms">
             <a
               href="https://instagram.com"
-              class="icon-footer"
+              class="contact-us__icons"
               aria-label="Instagram"
             >
               <svg>
@@ -488,7 +496,7 @@
             </a>
             <a
               href="https://twitter.com"
-              class="icon-footer"
+              class="contact-us__icons"
               aria-label="Twitter"
             >
               <svg>
@@ -497,7 +505,7 @@
             </a>
             <a
               href="https://facebook.com"
-              class="icon-footer"
+              class="contact-us__icons"
               aria-label="Facebook"
             >
               <svg>
@@ -506,7 +514,7 @@
             </a>
             <a
               href="https://linkedin.com"
-              class="icon-footer"
+              class="contact-us__icons"
               aria-label="LinkedIn"
             >
               <svg>
@@ -517,16 +525,16 @@
         </div>
         <div>
           <form class="form-subscribe">
-            <span class="form-title">Subscribe to the newsletter</span>
-            <div class="form-info">
+            <span>Subscribe to the newsletter</span>
+            <div class="form-subscribe__input">
               <input
-                class="form-input"
+                class="form-subscribe__input-mail"
                 type="email"
                 name="email"
                 placeholder="E-mail"
               />
               <div>
-                <button class="form-button" type="submit">
+                <button class="form-subscribe__button" type="submit">
                   Subscribe<i class="fa-sharp fa-solid fa-paper-plane"></i>
                 </button>
               </div>
@@ -539,39 +547,45 @@
 
     <div class="modal is-hidden" data-modal>
       <div class="modal-content">
-        <button class="btn-close" data-modal-close type="button">&times</button>
+        <button
+          class="modal-content__button-close"
+          data-modal-close
+          type="button"
+        >
+          &times
+        </button>
         <form class="form-modal" action="#">
           <span>Leave your information and we'll call you back</span>
-          <label class="form-label">
-            <span class="form-text">Name</span>
+          <label class="form-modal__label">
+            <span class="form-modal__text">Name</span>
             <input
-              class="input"
+              class="form-modal__input"
               type="text"
               name="username"
               placeholder="Ian Somerhalder"
               required
             />
-            <svg class="form-icon">
+            <svg class="form-modal__icon">
               <use href="/images/icons.svg#icon-person"></use>
             </svg>
           </label>
-          <label class="form-label">
-            <span class="form-text">Telephone</span>
+          <label class="form-modal__label">
+            <span class="form-modal__text">Telephone</span>
             <input
-              class="input"
+              class="form-modal__input"
               type="tel"
               name="tel"
               placeholder="123-4567-8901"
               required
             />
-            <svg class="form-icon">
+            <svg class="form-modal__icon">
               <use href="/images/icons.svg#form-icon2"></use>
             </svg>
           </label>
-          <label class="form-label">
-            <span class="form-text">E-mail</span>
+          <label class="form-modal__label">
+            <span class="form-modal__text">E-mail</span>
             <input
-              class="input"
+              class="form-modal__input"
               type="email"
               name="email"
               placeholder="sophie@example.com"
@@ -579,45 +593,45 @@
               maxlength="64"
               required
             />
-            <svg class="form-icon">
+            <svg class="form-modal__icon">
               <use href="/images/icons.svg#form-icon3"></use>
             </svg>
           </label>
-          <label class="form-label">
-            <span class="form-text">Comments</span>
+          <label class="form-modal__label">
+            <span class="form-modal__text">Comments</span>
             <textarea
-              class="input"
+              class="form-modal__input"
               type="text"
               name="comments"
               rows="3"
               placeholder="Enter the text"
             ></textarea>
           </label>
-          <div class="form-check">
-            <label class="check" for="myCheckboxId">
+          <div class="form-modal__box">
+            <label class="form-modal__check" for="myCheckboxId">
               <input
-                class="ckeckbox_input"
+                class="form-modal__checkbox"
                 type="checkbox"
-                name="check"
+                name="form-modal__check"
                 id="myCheckboxId"
                 required
               />
-              <div class="checkbox_box_svg">
+              <div class="form-modal__with-check">
                 <svg>
                   <use href="/images/icons.svg#check1"></use>
                 </svg>
               </div>
-              <div class="checkbox_box">
+              <div class="form-modal__no-check">
                 <svg>
                   <use href="/images/icons.svg#vector"></use>
                 </svg>
               </div>
 
               <span>I agree with the letter and accept the</span
-              ><a class="link">Terms and Conditions</a>
+              ><a>Terms and Conditions</a>
             </label>
           </div>
-          <button class="sub-btn" type="submit">Send</button>
+          <button class="form-modal__submit-button" type="submit">Send</button>
         </form>
       </div>
     </div>
