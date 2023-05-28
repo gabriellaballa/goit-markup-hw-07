@@ -83,6 +83,8 @@ input:focus + .form-modal__icon {
 .form-modal__box svg {
   width: 14px;
   height: 14px;
+  position: absolute;
+  top: 4px;
 }
 .form-modal__check {
   position: relative;
@@ -115,6 +117,13 @@ input:focus + .form-modal__icon {
   }
   span {
     margin-left: 20px;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: #757575;
   }
 }
 

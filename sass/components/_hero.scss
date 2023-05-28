@@ -23,6 +23,10 @@
   line-height: 1.87;
   /* identical to box height, or 188% */
   border-radius: 5px;
+  padding: 5px 30px;
+  border: none;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .hero__button {
   display: flex;
@@ -32,14 +36,9 @@
   outline: none;
   border: none;
 }
-.hero__button-request {
-  padding: 5px 30px;
-  border: none;
-}
-.hero--no-margin h1 {
-  margin: 0;
-}
-.hero__button-request {
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+.hero--no-margin {
+  h1 {
+    margin: 0;
+  }
 }
